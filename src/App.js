@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import Card from './component/Card';
 import TextField from '@material-ui/core/TextField';
-import './component/Style.css';
+import './App.css';
 
 function App() {
   const [people, setPeople] = useState([])
@@ -21,7 +21,7 @@ function App() {
   };
 
   // Pagination
-  const peoplePerPage = 8
+  const peoplePerPage = 10
   const startPeople = pageNumber * peoplePerPage
 
   const displayPeople = people.slice(startPeople, startPeople + peoplePerPage).map(person => (
@@ -46,9 +46,9 @@ function App() {
   // Render
   return (
     <div className="App">
-      <h1>Random People</h1>
-      <h2>Fetch people list from an API and display</h2>
-      <h5>API Link: https://randomuser.me</h5>
+      <h1>Random User</h1>
+      <h2>Fetch random user data from an API and display</h2>
+      <h5>API: https://randomuser.me</h5>
 
       {/* Fetch data*/}
       <div>
@@ -61,7 +61,9 @@ function App() {
       {/* Display data*/}
       <div className="people-list">
 
-       {displayPeople}
+       <div className="people-cards">
+        {displayPeople}
+       </div>
        
 
        <ReactPaginate 

@@ -1,6 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random People Display
+Fetch random user data from API (source: https://randomuser.me/) and display.
+# Live Site
+To view live site, visit: http://emeraldtanmeiing.github.io/random-people-display
 
 ## Available Scripts
 

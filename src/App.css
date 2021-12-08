@@ -1,38 +1,116 @@
+* {
+  box-sizing: border-box;
+  justify-content: center;
+} 
+
+html{
+  min-height: 100%;
+  min-width: 100%;
+  /* text-align: center; */
+}
+
+body{
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+  min-height: 100%;
+  min-width: 100%;
+  
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db); */
+  min-height: 100%;
+  min-width: 100%;
+  height:100vh;
+  /* position:absolute; */
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.App > h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > h2 {
+  margin-top: 5px;
+  opacity: 0.8;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
+
+  
+.App > h5 {
+  margin: 5px;
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+
+/* Button */
+.fetch-button {
+  padding: 13px 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color:rgb(254,254,254,0.9);
+  border: 1.5px solid #25274d;
+  color: #25274d;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: all .2s ease-in-out;
+  border-radius: 30px;
+  cursor: pointer;
+} 
+
+.fetch-button:hover {
+  background: #25274d;
+  border: 1.5px solid #25274d;
+  color: #fefefe;
+  transform: scale(1.08) perspective(1px)
+} 
+
+/* Pagination */
+.page-button{
+  width: 100%;
+  height: 20px;
+  padding: 0px;
+  list-style: None;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  
+}
+
+.page-button a{
+  padding: 8px 15px;
+  margin: 8px;
+  border-radius: 3px;
+  border: 1px solid #25274d;
+  color: #25274d;
+  cursor: pointer;
+}
+
+.page-button a:hover{
+ background-color: #25274d;
+ color: #fefefe;
+}
+
+.page-active a{
+ background-color: #25274d;
+ color: #fefefe;
+}
+
+.page-input{
+  padding: 10px;
+}
+
+.page-input span{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#page-input-text{
+ padding: 0px;
+} 
