@@ -6,3 +6,5 @@
     4. go live site to check changes: http://emeraldtanmeiing.github.io/random-people-display
     note that it may takes few minutes to reflect changes
     
+github pages settings in package.json:
+    "homepage": "http://emeraldtanmeiing.github.io/random-people-display",
