@@ -1,0 +1,8 @@
+1. To run app, run `yarn start` and go localhost:3000
+2. To redeploy app to github pages, do:
+    1. merge your code to master branch (`git add .`, `git commit -m "changes"`)
+    2. push to origin master (`git push origin master`)
+    3. run `npm run deploy`
+    4. go live site to check changes: http://emeraldtanmeiing.github.io/random-people-display
+    note that it may takes few minutes to reflect changes
+    
