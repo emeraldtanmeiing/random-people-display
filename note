@@ -1,10 +1,31 @@
+# Run app
 1. To run app, run `yarn start` and go localhost:3000
-2. To redeploy app to github pages, do:
+
+# Deploy on github pages
+before redeploy to github pages, change homepage to:
+    "homepage": "http://emeraldtanmeiing.github.io/random-people-display",
+
+To redeploy app to github pages, do:
+    0. change settings in package.json
+        "homepage": "http://emeraldtanmeiing.github.io/random-people-display",
     1. merge code to local master branch
     2. push to remote master branch
-    3. run `npm run deploy`
+    3. run `npm run deploy` in terminal
     4. go live site to check changes: http://emeraldtanmeiing.github.io/random-people-display
     note that it may takes few minutes to reflect changes
     
-github pages settings in package.json:
-    "homepage": "http://emeraldtanmeiing.github.io/random-people-display",
+# Deploy on heroku
+before redeploy to heroku, change homepage to:
+    "homepage": "https://random-people-display.herokuapp.com/",
+
+2. To redeploy app to github pages, do:
+    0. change settings in package.json
+        "homepage": "https://random-people-display.herokuapp.com/"
+    1. merge code to local master branch
+    2. push to remote master branch
+    3. open powershell in directory
+    4. run `git add .`, `git commit -m "description"
+    5. run `git push heroku master`
+    6. run `heroku open`
+    7. go live site to check changes: https://random-people-display.herokuapp.com/random-people-display
+    note that it may takes few minutes to reflect changes
